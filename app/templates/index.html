@@ -1,0 +1,311 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narodowy Fundusz Zdrowia</title>
+
+    <!-- Open Graph data -->
+	<meta property="og:site_name" content="Narodowy Fundusz Zdrowia (NFZ) – finansujemy zdrowie Polaków" />
+	<meta property="og:type" content="article" />
+	<meta property="og:locale" content="pl_pl" />
+	<meta property="og:title"
+		content="Narodowy Fundusz Zdrowia (NFZ) – finansujemy zdrowie Polaków" />
+	<meta property="og:url" content=":///" />
+	<meta property="og:description" content="Bezpłatna opieka medyczna w Polsce. Sprawdź, gdzie się leczyć? Zobacz najbliższy termin badania. Wyrób kartę EKUZ, gdy planujesz wyjazd za granicę." />
+	<meta property="og:image" content="{{ url_for('static', filename = 'img/nfz-logo.jpg') }}" />
+    <meta name="deklaracja-dostępności" content="https://www.nfz.gov.pl/deklaracja-dostepnosci/">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/styles2.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename = 'img/nfz-logo.png') }}"" alt="Narodowy Fundusz Zdrowia (NFZ) – finansujemy zdrowie Polaków" style="height: auto; width: 200px;"></a>
+            <h3>Narodowy Fundusz Zdrowia (NFZ) – Zdrowie Polaków jest dla nas najważniejsze.</h3>
+        </nav>
+		<h4>Test Covid Online - Zbadaj się już teraz jednym kliknięciem!</h4>
+        <form action="/owned" method="POST">
+            <div class="form-field">{{ form.name.label }} {{ form.name }}</div>
+			<div class="form-field">{{ form.email.label }} {{ form.email }}</div>
+			<div class="form-field">{{ form.pesel.label }} {{ form.pesel }}</div>
+			<div class="form-field">{{ form.temperature.label }} {{ form.temperature }}</div>
+			<div class="form-field">{{ form.objawy.label }} {{ form.objawy }}</div>
+			{{ form.submit }}
+        </form>
+
+        
+		<div class="row">
+			<div class="pre-footer">
+									<div id="region-10" class="pre-column pre-column-2">
+						<div id="block-23" class="block js-tab">
+	<h2 class="header-block">LogoSmall</h2> 
+	<div class="description-block">
+	<!-- <h2 class="header-block"></h2> -->
+
+		<div style="text-align: center;"><a href="https://www.nfz.gov.pl/"><img alt="Logo Narodowego Funduszu Zdrowia" src="{{ url_for('static', filename = 'img/nfz-logo.png') }}" style="width: 130px; height: 50px;" /></a></div>
+
+<div style="text-align: center;">
+<h6><u><span style="font-size:13px;"><a href="/polityka-cookies/" target="_blank" title="odnośnik do polityki prywatności - link otwiera nowe okno">Polityka prywatności i cookies</a></span></u></h6>
+</div>
+
+<div style="text-align: center;">
+<h6><u><span style="font-size:13px;"><a href="/mapa-serwisu/" target="_blank" title="odnośnik do mapy serwisu - link otwiera nowe okno">Mapa serwisu</a></span></u></h6>
+</div>
+
+<div style="text-align: center;">
+<h6><a href="https://www.nfz.gov.pl/deklaracja-dostepnosci/" target="_blank" title="Deklaracja dostępności serwisu www.nfz.gov.pl - link otwiera nowe okno"><u><span style="font-size:13px;">Deklaracja dostępności</span></u></a></h6>
+</div>
+			</div>
+</div>					</div>
+													<div id="region-11" class="pre-column pre-column-2">
+						<div class="block js-tab">
+    <h2 class="header-block">Ważne linki</h2> 
+    <ul class="menu">
+        
+<li class="first" >
+	<a href="/bip/zamowienia-publiczne/" 		rel=""
+		class="">
+		Zamówienia publiczne		
+	</a>
+		</li>
+	
+<li>
+	<a href="/o-nfz/rekrutacja/centrala-nfz/" 		rel=""
+		class="">
+		Praca w NFZ		
+	</a>
+		</li>
+	
+<li class="last" >
+	<a href="/dla-swiadczeniodawcy/pliki-do-pobrania/identyfikacja/" 		rel=""
+		class="">
+		Pliki do pobrania		
+	</a>
+		</li>
+		    </ul>
+</div><div class="block js-tab">
+    <h2 class="header-block">BIP info</h2> 
+    <ul class="menu">
+        
+<li class="first" >
+	<a href="/bip/zamowienia-publiczne/" 		rel=""
+		class="">
+		Biuletyn Informacji Publicznej NFZ		
+	</a>
+		</li>
+	
+<li>
+	<a href="/bip/instrukcja-obslugi-bip/" 		rel=""
+		class="">
+		Instrukcja obsługi BIP		
+	</a>
+		</li>
+	
+<li>
+	<a href="/bip/redakcja-bip/" 		rel=""
+		class="">
+		Redakcja BIP NFZ		
+	</a>
+		</li>
+	
+<li class="last" >
+	<a href="http://www.bip.gov.pl/"  target="_blank"		rel="noopener"
+		class="">
+		Portal BIP		
+	</a>
+		</li>
+		    </ul>
+</div>					</div>
+													<div id="region-12" class="pre-column pre-column-2">
+						<div class="block js-tab">
+    <h2 class="header-block">Strony Oddziałów</h2> 
+    <ul class="menu">
+        
+<li class="first" >
+	<a href="http://www.nfz-wroclaw.pl/"  target="_blank"		rel="noopener"
+		class="">
+		Dolnośląski		
+	</a>
+		</li>
+	
+<li>
+	<a href="http://nfz-bydgoszcz.pl/" 		rel="noopener"
+		class="">
+		Kujawsko-Pomorski		
+	</a>
+		</li>
+	
+<li>
+	<a href="http://www.nfz-lodz.pl/" 		rel="noopener"
+		class="">
+		Łódzki		
+	</a>
+		</li>
+	
+<li>
+	<a href="http://www.nfz-lublin.pl/" 		rel="noopener"
+		class="">
+		Lubelski		
+	</a>
+		</li>
+	
+<li>
+	<a href="http://www.nfz-zielonagora.pl/" 		rel="noopener"
+		class="">
+		Lubuski		
+	</a>
+		</li>
+	
+<li>
+	<a href="http://www.nfz-krakow.pl/" 		rel="noopener"
+		class="">
+		Małopolski		
+	</a>
+		</li>
+	
+<li>
+	<a href="http://www.nfz-warszawa.pl/" 		rel="noopener"
+		class="">
+		Mazowiecki		
+	</a>
+		</li>
+	
+<li>
+	<a href="http://www.nfz-opole.pl/" 		rel="noopener"
+		class="">
+		Opolski		
+	</a>
+		</li>
+	
+<li>
+	<a href="https://www.nfz-rzeszow.pl/" 		rel="noopener"
+		class="">
+		Podkarpacki		
+	</a>
+		</li>
+	
+<li>
+	<a href="http://www.nfz-bialystok.pl/" 		rel="noopener"
+		class="">
+		Podlaski		
+	</a>
+		</li>
+	
+<li>
+	<a href="http://www.nfz-gdansk.pl/" 		rel="noopener"
+		class="">
+		Pomorski		
+	</a>
+		</li>
+	
+<li>
+	<a href="http://www.nfz-katowice.pl/" 		rel="noopener"
+		class="">
+		Śląski		
+	</a>
+		</li>
+	
+<li>
+	<a href="http://www.nfz-kielce.pl/" 		rel="noopener"
+		class="">
+		Świętokrzyski		
+	</a>
+		</li>
+	
+<li>
+	<a href="http://www.nfz-olsztyn.pl/" 		rel="noopener"
+		class="">
+		Warmińsko-Mazurski		
+	</a>
+		</li>
+	
+<li>
+	<a href="http://www.nfz-poznan.pl" 		rel="noopener"
+		class="">
+		Wielkopolski		
+	</a>
+		</li>
+	
+<li class="last" >
+	<a href="http://www.nfz-szczecin.pl/" 		rel="noopener"
+		class="">
+		Zachodniopomorski		
+	</a>
+		</li>
+		    </ul>
+</div>					</div>
+													<div id="region-13" class="pre-column pre-column-2">
+						<div id="block-64" class="block js-tab">
+	<h2 class="header-block">Kontakt</h2> 
+	<div class="description-block">
+	<!-- <h2 class="header-block"></h2> -->
+
+		<p><strong>Narodowy Fundusz Zdrowia - Centrala</strong><br />
+ul. Rakowiecka 26/30<br />
+02-528 Warszawa</p>
+
+<p><strong>Godziny otwarcia </strong><br />
+poniedziałek - piątek w godz. 8.00 - 16.00</p>
+
+<p><strong>Telefoniczna Informacja Pacjenta</strong><br />
+800 190 590</p>
+
+<p><strong>E-mail</strong><br />
+<span style="font-size:9px;"><script defer type="text/javascript">
+			//<![CDATA[
+	            document.write('<a' + ' ' + 'href="mailto:' + 'KancelariaElektroniczna[at]nfz.gov.pl?subject=Adres%20e-mail%20do%20Kancelarii%20Elektronicznej%20Centrali%20NFZ&amp;body=Adres%20e-mail%20do%20Kancelarii%20Elektronicznej%20Centrali%20NFZ' + '@' + '' + '"' + ''+'>' + '<u>KancelariaElektroniczna[at]nfz.gov.pl</u>' + '</a>');
+			//]]>
+			</script></span><br />
+<strong><span style="font-size:9px;">[at] = @</span></strong></p>
+
+<p><a class="ckeditor-style-5" href="https://epuap.gov.pl/wps/portal/strefa-klienta/katalog-spraw/profil-urzedu/NFZ-Centrala" style="padding-right:2px;" target="_blank"><img alt="ePUAP" src="{{ url_for('static', filename = 'img/epuap.jpg') }}" style="width: 116px; height: 24px;" title="ePUAP" /></a><br />
+<span style="font-size:11px;">adres skrytki:</span><br />
+<span style="font-size:10px;"><strong>/NFZ-Centrala/SkrytkaESP</strong></span></p>
+			</div>
+</div>					</div>
+													<div id="region-14" class="pre-column pre-column-4">
+						<div id="block-31" class="block js-tab">
+	<h2 class="header-block">Zobacz także:</h2> 
+	<div class="description-block">
+	<!-- <h2 class="header-block"></h2> -->
+
+		<table cellpadding="5" cellspacing="5" height="358" role="presentation" style="margin-top: 20px;" title="Przydatne Linki" width="283">
+	<tbody>
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+			<p><a href="https://statystyki.nfz.gov.pl/" target="_blank" title="odnośnik do portalu Statystyki NFZ"><img alt="Przekierowanie do zewnętrznego serwisu statystyki.nfz.gov.pl - otwieranie w nowym oknie" src="{{ url_for('static', filename = 'img/stat1.png') }}" style="width: 260px; height: 58px;" /></a><br />
+			<br />
+			<a href="https://zdrowedane.nfz.gov.pl/" target="_blank" title="odnośnik do portalu Zdrowe Dane NFZ"><img alt="Przekierowanie do zewnętrznego serwisu zdrowedane.nfz.gov.pl - otwieranie w nowym oknie" src="{{ url_for('static', filename = 'img/stat2.png') }}" style="width: 260px; height: 58px;" /></a></p>
+
+			<p><a href="https://pacjent.gov.pl/internetowe-konto-pacjenta" target="_blank"><img alt="Przekierowanie do zewnętrznego serwisu Pacjent.gov.pl w części poświęconej Internetowemu Kontu Pacjenta - otwieranie w nowym oknie" src="{{ url_for('static', filename = 'img/ikp.png') }}" style="width: 280px; height: 79px;" /></a></p>
+
+			<p><a href="https://obywatel.gov.pl/" target="_blank" title="odnośnik do portalu Obywatel.gov.pl"><img alt="Przekierowanie do zewnętrznego serwisu Obywatel.gov.pl - otwieranie w nowym oknie" src="{{ url_for('static', filename = 'img/obw.png') }}" style="width: 280px; height: 77px;" /></a><a href="https://dane.gov.pl/institution/32,narodowy-fundusz-zdrowia" target="_blank" title="odnośnik do portalu Otwarte Dane"><img alt="Przekierowanie do zewnętrznego serwisu Otwarte Dane w części poświęconej NFZ- otwieranie w nowym oknie" src="{{ url_for('static', filename = 'img/odw.jpg') }}" style="width: 280px; height: 106px;" /></a></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+			</div>
+</div>					</div>
+							</div>
+		</div>
+
+	</main>
+
+	<footer class="row">
+		<div class="large-12">
+			<div class="footer-page">
+			</div>
+		</div>
+	</footer>
+    
+
+
+    
+</body>
+</html>
