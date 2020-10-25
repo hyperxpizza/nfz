@@ -1,17 +1,10 @@
-FROM ubuntu:16.04
+FROM python:3.7
 
-RUN apt-get update -y && \
-    apt-get install -y python3-pip python3-dev
+WORKDIR /usr/src/app
 
-# We copy just the requirements.txt first to leverage Docker cache
-COPY ./requirements.txt /app/requirements.txt
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
 
-WORKDIR /app
+COPY . .
 
-RUN pip install -r requirements.txt
-
-COPY . /app
-
-ENTRYPOINT [ "python" ]
-
-CMD [ "app.py" ]
+CMD [ "python", "./app/app.py" ]
